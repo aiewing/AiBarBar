@@ -15,6 +15,19 @@
 		0125D921222BC35400A8EE02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D920222BC35400A8EE02 /* main.m */; };
 		0125D92B222BC35500A8EE02 /* AiBarBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D92A222BC35500A8EE02 /* AiBarBarTests.m */; };
 		0125D936222BC35500A8EE02 /* AiBarBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D935222BC35500A8EE02 /* AiBarBarUITests.m */; };
+		0125D946222C436D00A8EE02 /* AiController_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D945222C436D00A8EE02 /* AiController_1.m */; };
+		0125D949222C437F00A8EE02 /* AiController_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D948222C437F00A8EE02 /* AiController_2.m */; };
+		0125D94C222C438E00A8EE02 /* AiController_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D94B222C438E00A8EE02 /* AiController_3.m */; };
+		0125D94F222C43A200A8EE02 /* AiController_4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D94E222C43A200A8EE02 /* AiController_4.m */; };
+		0125D952222C43D000A8EE02 /* AiTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D951222C43D000A8EE02 /* AiTabBarController.m */; };
+		0125D956222C484D00A8EE02 /* happy_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D954222C484D00A8EE02 /* happy_selected@3x.png */; };
+		0125D957222C484D00A8EE02 /* happy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D955222C484D00A8EE02 /* happy@3x.png */; };
+		0125D95A222C4B5F00A8EE02 /* pumpkin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D958222C4B5F00A8EE02 /* pumpkin@3x.png */; };
+		0125D95B222C4B5F00A8EE02 /* pumpkin_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D959222C4B5F00A8EE02 /* pumpkin_selected@3x.png */; };
+		0125D95E222C4E7C00A8EE02 /* watermelon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D95C222C4E7B00A8EE02 /* watermelon@3x.png */; };
+		0125D95F222C4E7C00A8EE02 /* watermelon_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D95D222C4E7B00A8EE02 /* watermelon_selected@3x.png */; };
+		0125D962222C506200A8EE02 /* peach@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D960222C506200A8EE02 /* peach@3x.png */; };
+		0125D963222C506200A8EE02 /* peach_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0125D961222C506200A8EE02 /* peach_selected@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,24 @@
 		0125D931222BC35500A8EE02 /* AiBarBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiBarBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0125D935222BC35500A8EE02 /* AiBarBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiBarBarUITests.m; sourceTree = "<group>"; };
 		0125D937222BC35500A8EE02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0125D944222C436D00A8EE02 /* AiController_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AiController_1.h; sourceTree = "<group>"; };
+		0125D945222C436D00A8EE02 /* AiController_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiController_1.m; sourceTree = "<group>"; };
+		0125D947222C437F00A8EE02 /* AiController_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AiController_2.h; sourceTree = "<group>"; };
+		0125D948222C437F00A8EE02 /* AiController_2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiController_2.m; sourceTree = "<group>"; };
+		0125D94A222C438E00A8EE02 /* AiController_3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AiController_3.h; sourceTree = "<group>"; };
+		0125D94B222C438E00A8EE02 /* AiController_3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiController_3.m; sourceTree = "<group>"; };
+		0125D94D222C43A200A8EE02 /* AiController_4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AiController_4.h; sourceTree = "<group>"; };
+		0125D94E222C43A200A8EE02 /* AiController_4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiController_4.m; sourceTree = "<group>"; };
+		0125D950222C43D000A8EE02 /* AiTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AiTabBarController.h; sourceTree = "<group>"; };
+		0125D951222C43D000A8EE02 /* AiTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiTabBarController.m; sourceTree = "<group>"; };
+		0125D954222C484D00A8EE02 /* happy_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy_selected@3x.png"; sourceTree = "<group>"; };
+		0125D955222C484D00A8EE02 /* happy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy@3x.png"; sourceTree = "<group>"; };
+		0125D958222C4B5F00A8EE02 /* pumpkin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pumpkin@3x.png"; sourceTree = "<group>"; };
+		0125D959222C4B5F00A8EE02 /* pumpkin_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pumpkin_selected@3x.png"; sourceTree = "<group>"; };
+		0125D95C222C4E7B00A8EE02 /* watermelon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watermelon@3x.png"; sourceTree = "<group>"; };
+		0125D95D222C4E7B00A8EE02 /* watermelon_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watermelon_selected@3x.png"; sourceTree = "<group>"; };
+		0125D960222C506200A8EE02 /* peach@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peach@3x.png"; sourceTree = "<group>"; };
+		0125D961222C506200A8EE02 /* peach_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peach_selected@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +132,8 @@
 		0125D910222BC35000A8EE02 /* AiBarBar */ = {
 			isa = PBXGroup;
 			children = (
+				0125D953222C47F500A8EE02 /* Resource */,
+				0125D943222C432A00A8EE02 /* Controller */,
 				0125D911222BC35000A8EE02 /* AppDelegate.h */,
 				0125D912222BC35000A8EE02 /* AppDelegate.m */,
 				0125D914222BC35000A8EE02 /* ViewController.h */,
@@ -130,6 +163,38 @@
 				0125D937222BC35500A8EE02 /* Info.plist */,
 			);
 			path = AiBarBarUITests;
+			sourceTree = "<group>";
+		};
+		0125D943222C432A00A8EE02 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0125D944222C436D00A8EE02 /* AiController_1.h */,
+				0125D945222C436D00A8EE02 /* AiController_1.m */,
+				0125D947222C437F00A8EE02 /* AiController_2.h */,
+				0125D948222C437F00A8EE02 /* AiController_2.m */,
+				0125D94A222C438E00A8EE02 /* AiController_3.h */,
+				0125D94B222C438E00A8EE02 /* AiController_3.m */,
+				0125D94D222C43A200A8EE02 /* AiController_4.h */,
+				0125D94E222C43A200A8EE02 /* AiController_4.m */,
+				0125D950222C43D000A8EE02 /* AiTabBarController.h */,
+				0125D951222C43D000A8EE02 /* AiTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0125D953222C47F500A8EE02 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0125D954222C484D00A8EE02 /* happy_selected@3x.png */,
+				0125D955222C484D00A8EE02 /* happy@3x.png */,
+				0125D959222C4B5F00A8EE02 /* pumpkin_selected@3x.png */,
+				0125D958222C4B5F00A8EE02 /* pumpkin@3x.png */,
+				0125D95D222C4E7B00A8EE02 /* watermelon_selected@3x.png */,
+				0125D95C222C4E7B00A8EE02 /* watermelon@3x.png */,
+				0125D961222C506200A8EE02 /* peach_selected@3x.png */,
+				0125D960222C506200A8EE02 /* peach@3x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +301,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0125D91E222BC35400A8EE02 /* LaunchScreen.storyboard in Resources */,
+				0125D957222C484D00A8EE02 /* happy@3x.png in Resources */,
+				0125D95F222C4E7C00A8EE02 /* watermelon_selected@3x.png in Resources */,
+				0125D95B222C4B5F00A8EE02 /* pumpkin_selected@3x.png in Resources */,
+				0125D956222C484D00A8EE02 /* happy_selected@3x.png in Resources */,
 				0125D91B222BC35400A8EE02 /* Assets.xcassets in Resources */,
+				0125D95E222C4E7C00A8EE02 /* watermelon@3x.png in Resources */,
+				0125D95A222C4B5F00A8EE02 /* pumpkin@3x.png in Resources */,
 				0125D919222BC35100A8EE02 /* Main.storyboard in Resources */,
+				0125D963222C506200A8EE02 /* peach_selected@3x.png in Resources */,
+				0125D962222C506200A8EE02 /* peach@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0125D916222BC35000A8EE02 /* ViewController.m in Sources */,
+				0125D952222C43D000A8EE02 /* AiTabBarController.m in Sources */,
+				0125D94F222C43A200A8EE02 /* AiController_4.m in Sources */,
+				0125D94C222C438E00A8EE02 /* AiController_3.m in Sources */,
+				0125D949222C437F00A8EE02 /* AiController_2.m in Sources */,
+				0125D946222C436D00A8EE02 /* AiController_1.m in Sources */,
 				0125D921222BC35400A8EE02 /* main.m in Sources */,
 				0125D913222BC35000A8EE02 /* AppDelegate.m in Sources */,
 			);
