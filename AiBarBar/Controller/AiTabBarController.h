@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AiTabBarController : UITabBarController
 
+- (void)initTabBarWithControllers:(NSArray<UIViewController *> *)ctls
+                           titles:(NSArray<NSString *> *)titles
+                      titleColors:(NSArray<UIColor *> *)titleColors
+                selectTitleColors:(NSArray<UIColor *> *)selectTitleColors
+                           images:(NSArray<UIImage *> *)imgs
+                     selectImages:(NSArray<UIImage *> *)selectImgs;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,12 +7,11 @@
 //
 
 #import "AiTabBarController.h"
-#import "AiController_1.h"
-#import "AiController_2.h"
-#import "AiController_3.h"
-#import "AiController_4.h"
+#import "AiHeader.h"
 
 @interface AiTabBarController ()
+
+@property (nonatomic, strong) UIImageView *bgImgView;
 
 @end
 
@@ -21,32 +20,67 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self initUI];
 }
 
-- (void)initUI {
-    AiController_1 *ctl1 = [[AiController_1 alloc] init];
-    ctl1.title = @"Aie1";
-    UINavigationController * nav1 = [[UINavigationController alloc] initWithRootViewController:ctl1];
-    ctl1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"开森" image:[[UIImage imageNamed:@"happy"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"happy_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+- (void)initTabBarWithControllers:(NSArray<UIViewController *> *)ctls
+                           titles:(NSArray<NSString *> *)titles
+                      titleColors:(NSArray<UIColor *> *)titleColors
+                selectTitleColors:(NSArray<UIColor *> *)selectTitleColors
+                           images:(NSArray<UIImage *> *)imgs
+                     selectImages:(NSArray<UIImage *> *)selectImgs {
     
-    AiController_2 *ctl2 = [[AiController_2 alloc] init];
-    ctl2.title = @"Aie2";
-    UINavigationController * nav2 = [[UINavigationController alloc] initWithRootViewController:ctl2];
-    ctl2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"南过" image:[[UIImage imageNamed:@"pumpkin"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"pumpkin_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    for (int i = 0; i < ctls.count; i++) {
+        UIViewController *ctl = ctls[i];
+        ctl.title = titles[i];
+        ctl.tabBarItem = [[UITabBarItem alloc] initWithTitle:titles[i] image:imgs[i] selectedImage:selectImgs[i]];
+    }
     
-    AiController_3 *ctl3 = [[AiController_3 alloc] init];
-    ctl3.title = @"Aie3";
-    UINavigationController * nav3 = [[UINavigationController alloc] initWithRootViewController:ctl3];
-    ctl3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"桃厌" image:[[UIImage imageNamed:@"peach"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"peach_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    self.viewControllers = ctls;
+    self.tabBar.hidden = true;
+    [self.view addSubview:self.bgImgView];
     
-    AiController_4 *ctl4 = [[AiController_4 alloc] init];
-    ctl4.title = @"Aie4";
-    UINavigationController * nav4 = [[UINavigationController alloc] initWithRootViewController:ctl4];
-    ctl4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"西欢" image:[[UIImage imageNamed:@"watermelon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"watermelon_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    CGFloat subViewWidth = SCREEN_WIDTH / ctls.count;
+    for (int i = 0; i < ctls.count; i++) {
+        UIView *subView = [[UIView alloc] initWithFrame:CGRectMake(subViewWidth * i, 0, subViewWidth, 49)];
+        [self.bgImgView addSubview:subView];
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, subView.frame.size.height - 15, subViewWidth, 15)];
+        [subView addSubview:label];
+        label.userInteractionEnabled = true;
+        label.text = titles[i];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.font = [UIFont systemFontOfSize:10];
+        
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        [subView addSubview:imgView];
+        imgView.userInteractionEnabled = true;
+        imgView.image = imgs[i];
+        imgView.center = CGPointMake(subView.frame.size.width / 2, subView.frame.size.height / 2 - 5);
+        
+        // 添加手势
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tabBarTap:)];
+        [subView addGestureRecognizer:tap];
+    }
+}
+
+
+- (void)viewWillLayoutSubviews {
     
-    self.viewControllers = @[nav1, nav2, nav3, nav4];
+    self.bgImgView.frame = CGRectMake(0, SCREEN_HEIGHT - 49, SCREEN_WIDTH, 49);
+}
+
+- (void)tabBarTap:(UITapGestureRecognizer *)tap {
     
+}
+
+#pragma mark - Lazy
+- (UIImageView *)bgImgView {
+    if (!_bgImgView) {
+        _bgImgView = [[UIImageView alloc] init];
+        _bgImgView.backgroundColor = [UIColor whiteColor];
+        _bgImgView.userInteractionEnabled = true;
+    }
+    return _bgImgView;
 }
 
 @end

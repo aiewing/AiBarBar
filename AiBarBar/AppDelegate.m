@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "AiTabBarController.h"
+#import "AiController_1.h"
+#import "AiController_2.h"
+#import "AiController_3.h"
+#import "AiController_4.h"
 
 @interface AppDelegate ()
 
@@ -15,14 +19,46 @@
 
 @implementation AppDelegate
 
+- (void)initUI {
+    AiController_1 *ctl1 = [[AiController_1 alloc] init];
+    ctl1.title = @"Aie1";
+    UINavigationController * nav1 = [[UINavigationController alloc] initWithRootViewController:ctl1];
+    
+    AiController_2 *ctl2 = [[AiController_2 alloc] init];
+    ctl2.title = @"Aie2";
+    UINavigationController * nav2 = [[UINavigationController alloc] initWithRootViewController:ctl2];
+    
+    AiController_3 *ctl3 = [[AiController_3 alloc] init];
+    ctl3.title = @"Aie3";
+    UINavigationController * nav3 = [[UINavigationController alloc] initWithRootViewController:ctl3];
+    
+    AiController_4 *ctl4 = [[AiController_4 alloc] init];
+    ctl4.title = @"Aie4";
+    UINavigationController * nav4 = [[UINavigationController alloc] initWithRootViewController:ctl4];
+    
+    AiTabBarController *ctl = [[AiTabBarController alloc] init];
+    [ctl initTabBarWithControllers:@[nav1, nav2, nav3, nav4]
+                            titles:@[@"开森", @"南过", @"桃厌", @"西欢"]
+                       titleColors:nil
+                 selectTitleColors:nil
+                            images:@[[[UIImage imageNamed:@"happy"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal],
+                                     [[UIImage imageNamed:@"pumpkin"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal],
+                                     [[UIImage imageNamed:@"peach"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal],
+                                     [[UIImage imageNamed:@"watermelon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]]
+                      selectImages:@[[[UIImage imageNamed:@"happy_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal],
+                                     [[UIImage imageNamed:@"pumpkin_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal],
+                                     [[UIImage imageNamed:@"peach_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal],
+                                     [[UIImage imageNamed:@"watermelon_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]]];
+    self.window.rootViewController = ctl;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window= [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor grayColor];
     
-    AiTabBarController *ctl = [[AiTabBarController alloc] init];
-    self.window.rootViewController = ctl;
+    [self initUI];
     
     [self.window makeKeyAndVisible];
     

@@ -82,6 +82,7 @@
 		0125D95D222C4E7B00A8EE02 /* watermelon_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watermelon_selected@3x.png"; sourceTree = "<group>"; };
 		0125D960222C506200A8EE02 /* peach@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peach@3x.png"; sourceTree = "<group>"; };
 		0125D961222C506200A8EE02 /* peach_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peach_selected@3x.png"; sourceTree = "<group>"; };
+		0133C728222D7F01002AAB18 /* AiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AiHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +179,7 @@
 				0125D94E222C43A200A8EE02 /* AiController_4.m */,
 				0125D950222C43D000A8EE02 /* AiTabBarController.h */,
 				0125D951222C43D000A8EE02 /* AiTabBarController.m */,
+				0133C728222D7F01002AAB18 /* AiHeader.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
