@@ -36,8 +36,7 @@
     ctl4.title = @"Aie4";
     UINavigationController * nav4 = [[UINavigationController alloc] initWithRootViewController:ctl4];
     
-    AiTabBarController *ctl = [[AiTabBarController alloc] init];
-    [ctl initTabBarWithControllers:@[nav1, nav2, nav3, nav4]
+    AiTabBarController *ctl = [[AiTabBarController alloc] initTabBarWithControllers:@[nav1, nav2, nav3, nav4]
                             titles:@[@"开森", @"南过", @"桃厌", @"西欢"]
                        titleColors:nil
                  selectTitleColors:nil
